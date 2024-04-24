@@ -1,0 +1,35 @@
+{% extends 'Base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/Index.css') }} ">
+{% endblock %}
+
+{% block title %} {{ super() }} Inicio {% endblock %}
+
+{% block content %}
+    <section id="Home_Space">
+        <div class="search-container">
+            <input type="text" placeholder="Busca tu producto aquí">
+            <button type="submit">Buscar</button>
+        </div>
+    </section>
+    
+
+    <section id="Collumnas"> 
+
+        <article >
+            <h2>Logo 1</h2>
+            <img src="/static/IMG/Entidad_Foto.jpg" alt="IMG_Prueba_1">
+        </article>
+        <article >
+            <h2>Logo 2</h2>
+            <img src="/static/IMG/Entidad_Foto_V2.jpg" alt="IMG_Prueba_2">
+        </article>
+        <article >
+            <h2>Logo 3</h2>
+            <img src="/static/IMG/Company.jpg" alt="IMG_Prueba_3">
+        </article>
+
+    </section>
+{% endblock %}

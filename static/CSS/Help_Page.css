@@ -1,0 +1,161 @@
+body, html 
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    margin-bottom: 40px;
+}
+body
+{
+    background-color: rgb(142, 185, 79);
+}
+
+#First_Paragraph 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 65px;
+}
+
+#First_Paragraph article
+{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(116, 151, 62);
+    border-radius: 5%;
+    padding: 15px;
+    margin-top: 10px;
+    flex: 1 1 75%;
+    margin-right: 15px;
+}
+  
+#First_Paragraph article h1
+{
+    margin-top: -3px;
+}
+
+#First_Paragraph figure 
+{
+    flex: 1 1 25%;
+    margin-right: 15px;
+    margin-left: 25px; 
+    border-radius: 45%;
+}
+  
+#First_Paragraph img 
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 45%;
+}
+  
+#More_Help_Paragraph 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+#More_Help_Paragraph article 
+{
+    margin-bottom: 15px;
+    background-color: rgb(116, 151, 62);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 8%;
+    text-align: center;
+    margin: 10px;
+}
+  
+.article-content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.article-content button 
+{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+  
+.article-content button:hover 
+{
+    background-color: #45a049;
+}
+  
+  /* Responsive adjustments */
+@media screen and (max-width: 768px) 
+{
+    #First_Paragraph 
+    {
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #First_Paragraph img 
+    {
+        width: auto;
+    }
+
+    #First_Paragraph figure 
+    {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+  
+    #First_Paragraph article
+    {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(51, 77, 32);
+    }
+
+    #More_Help_Paragraph
+    {
+        justify-content: center;
+    }
+
+    #More_Help_Paragraph article {
+      flex: 0 0 100%; /* Each article takes up full width */
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: rgb(51, 77, 32);
+      border-radius: 8%;
+      color: aliceblue;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    #More_Help_Paragraph article 
+    {
+        flex: 1 1 calc(50% - 450px);
+        background-color: rgb(51, 77, 32);
+    }
+
+    #First_Paragraph article
+    {
+        background-color: rgb(51, 77, 32);
+    }
+}

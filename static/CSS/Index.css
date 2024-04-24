@@ -1,0 +1,70 @@
+body, html 
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    margin-bottom: 40px;
+}
+
+#Home_Space 
+{
+    height: 100vh; /* Make the Home_Space section fill the viewport */
+    background-color: rgb(142, 185, 79); /* Just for demonstration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+.search-container 
+{
+    display: inline-block; /* Display the search bar as a block element */
+}
+  
+input[type="text"] 
+{
+    padding: 10px; /* Increase padding for the input field */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Increase font size */
+}
+  
+button 
+{
+    padding: 10px 20px; /* Increase padding for the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+  
+button:hover 
+{
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+#Collumnas 
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+#Collumnas article 
+{
+    flex: 0 0 30%; /* Each article takes up about 30% of the width */
+    text-align: center;
+    margin: 0 10px; /* Adjust spacing between articles */
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}

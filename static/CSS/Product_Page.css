@@ -1,0 +1,40 @@
+body, html 
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    margin-bottom: 40px;
+    margin-top: 65px;
+}
+
+.product-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    grid-gap: 10px; /* Spacing between grid items */
+    border: none;
+}
+  
+.producto 
+{
+    text-align: center;
+    border: 1px solid #ccc; /* Add border for each product */
+    padding: 5px; /* Add padding for spacing */
+    margin: 15px;
+}
+  
+.producto img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.producto p
+{
+    border: 1px solid #ccc;
+    min-height: 50px;
+    
+}
