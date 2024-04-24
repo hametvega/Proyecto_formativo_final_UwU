@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/Help_Page.css') }} ">
+{% endblock %}
+
+{% block title %} {{ super() }} Informacion Adicional {% endblock %}
+
+{% block content %}
+
+    <section id="First_Paragraph">
+
+    </section>
+
+    <section id="More_Help_Paragraph">
+
+    </section>
+
+{% endblock %}
