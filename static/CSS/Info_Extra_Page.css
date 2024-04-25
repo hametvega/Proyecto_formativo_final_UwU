@@ -1,0 +1,72 @@
+/* body, html 
+{
+    margin: 0;
+    padding: 0;
+}
+
+section 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+figure 
+{
+    margin: 0;
+} 
+
+article 
+{
+    text-align: center;
+}
+
+.Section_Principal 
+{
+    display: flex;
+    margin-top: 6%;
+} 
+
+.Section_Principal  figure
+{
+    width: 100%;
+} 
+
+.IZQ_Section, .DER_Section 
+{
+    width: 100%;
+    flex-direction: column;
+}
+
+.IZQ_Section img 
+{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.DER_Section img 
+{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.Descripcion_Section_1 figure
+{
+    width: 35%;
+}
+
+.redonda 
+{
+        width: 200px;
+}
+
+@media (max-width: 768px) 
+{
+    .IZQ_Section, .DER_Section 
+    {
+        width: 100%;
+    }
+}  */

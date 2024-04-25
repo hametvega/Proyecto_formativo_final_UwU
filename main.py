@@ -24,3 +24,10 @@ def Pagina_De_Productos():
     print('This is another route. :D')
 
     return render_template('Registro_Product.html');
+
+@app.route('/Informacion_Adicional')
+def Pagina_De_Info_Extra():
+    
+    print('This is another route. :D')
+
+    return render_template('Info_Extra.html');

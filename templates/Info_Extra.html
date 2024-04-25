@@ -2,19 +2,54 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/Help_Page.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/Info_Extra_Page.css') }} ">
 {% endblock %}
 
 {% block title %} {{ super() }} Informacion Adicional {% endblock %}
 
 {% block content %}
+    <section class="Section_Principal">
+        <section class="IZQ_Section">
+            <figure>
+                <img src="/static/IMG/Quienes_somos.png" alt="Imagen izquierda">
+            </figure>
+            <article>
+                <p>Contenido del artículo izquierdo.</p>
+            </article>
+        </section>
 
-    <section id="First_Paragraph">
-
+        <section class="DER_Section">
+            <article>
+                <p>Contenido del artículo derecho.</p>
+            </article>
+            <figure>
+                <img src="/static/IMG/Quienes_somos_2.jpeg" alt="Imagen derecha">
+            </figure>
+        </section>
     </section>
 
-    <section id="More_Help_Paragraph">
+    <section class="Descripcion_Section_1">
+        <figure class="redonda">
+            <img src="/static/IMG/FORMACION-EMPRENDEDORES.jpg" alt="">
+        </figure>
+        <article>
+            <p>Descripción de la sección 1.</p>
+        </article>
+    </section>
 
+    <section class="Otras_Secciones">
+        <figure class="redonda">
+            <img src="/static/IMG/Icon_1.png" alt="1">
+        </figure>
+        <figure class="redonda">
+            <img src="/static/IMG/Icon_2.png" alt="2">
+        </figure>
+        <figure class="redonda">
+            <img src="/static/IMG/Icon_3.png" alt="3">
+        </figure>
+        <figure class="redonda">
+            <img src="/static/IMG/Icon_1.png" alt="4">
+        </figure>
     </section>
 
 {% endblock %}
