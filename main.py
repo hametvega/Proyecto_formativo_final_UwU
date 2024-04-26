@@ -1,14 +1,14 @@
 from flask import Flask, render_template, redirect, request, url_for,flash, session
-
 import mysql.connector
+
+app = Flask(__name__)
+app.secret_key = 'Dani_Server';
+
 db = mysql.connector.connect(
     host="localhost",
     user="root",
     password = "",
     database = "farm_to_cell")
-
-app = Flask(__name__)
-app.secret_key = 'Dani_Server';
 
 cursor =  db.cursor()
 
@@ -63,5 +63,5 @@ def Registrando_p():
             except mysql.connector.errors.IntegrityError as e:
                 return render_template('Pagina_De_Registro_E_Inicio_Sesion.html', error=str(e))
         
-        return render_template('Pagina_De_Registro_E_Inicio_Sesion.html')
+        return render_template('Login_Registro.html')
 #Los datos no se guardan en la tabla sin embargo no suelta error 

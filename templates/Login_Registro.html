@@ -1,0 +1,46 @@
+{% extends 'Base.html' %}
+
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href=" {{ url_for('static', filename='CSS/Registro_Login_Page.css') }} ">
+{% endblock %}
+
+{% block title %} {{ super() }} Registrate o Inicia sesión {% endblock %}
+
+{% block content %}
+
+    <fieldset>
+        <form action="/Registrar" method="post">
+            <h1> Registro de datos </h1><br>
+            
+            <label> <h4> Ingrese su nombre: </h4> 
+            <input type="text" required name="Name" maxlength="16" placeholder="Registre su primer nombre aqui" required ><br>
+            
+            </label>
+
+            <label> <h4> Ingrese su apellido: </h4> 
+            <input type="text" required name="Lastname" maxlength="12" placeholder="Registre su primer apellido aquí" required ><br> 
+            </label>    
+
+            <label> <h4> Ingrese su número de telefono: </h4> 
+            <input type="number" min=1000000000 max="9999999999" required name="telefono" placeholder="Registre su telefono aquí" required ><br>
+            </label>
+
+            <label> <h4> Ingrese su email: </h4> 
+            <input type="email" required name="Email" placeholder="Registre su correo aquí" required >
+            </label>
+
+            <label> <h4> Ingrese su dirección: </h4> 
+                <input type="text" required name="Adress" placeholder="Registre su dirección aquí" required >
+            </label>
+
+            <label> <h4> Contraseña: </h4> 
+            <input type="password" required name="Password" placeholder="Registre su contraseña aquí" required><br> 
+            </label>
+
+            <button type="button"> Continuar </button>
+
+        </form>
+    </fieldset>
+
+{% endblock %}
