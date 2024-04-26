@@ -1,72 +1,126 @@
-/* body, html 
+body, html 
 {
     margin: 0;
     padding: 0;
 }
 
-section 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-figure 
-{
-    margin: 0;
-} 
-
-article 
-{
-    text-align: center;
-}
-
 .Section_Principal 
 {
     display: flex;
-    margin-top: 6%;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 } 
 
-.Section_Principal  figure
+.Section_Principal article
 {
-    width: 100%;
+    text-align: center;
 } 
 
 .IZQ_Section, .DER_Section 
 {
-    width: 100%;
+    width: calc( 100% - 20px);
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.IZQ_Section img 
+.IZQ_Section
 {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    margin-right: 5%;
 }
 
-.DER_Section img 
+.IZQ_Section figure, .DER_Section figure
 {
-    max-width: 100%;
     width: 100%;
-    height: auto;
+    padding: 0;
+    margin: 10px;
+}
+
+.IZQ_Section img, .DER_Section img
+{
+    width: 100%;
+}
+
+.IZQ_Section article, .DER_Section article
+{
+    width: 100%;
+}
+
+.DER_Section article, .IZQ_Section article
+{
+    padding: 45px;
+}
+
+.DER_Section article
+{
+    margin-top: 2%;
+}
+
+.DER_Section img
+{
+    border-radius: 20px;
+}
+
+.Descripcion_Section_1
+{
+    display: flex;
+    align-items: center;
 }
 
 .Descripcion_Section_1 figure
 {
-    width: 35%;
+    max-width: 50%;
+}
+
+.Descripcion_Section_1 img
+{
+    width: 100%;
+}
+
+.Otras_Secciones
+{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.Otras_Secciones h3
+{
+    text-align: center;
+}
+
+.container-asociados
+{
+    display: flex;
+}
+
+.Otras_Secciones figure
+{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .redonda 
 {
-        width: 200px;
+    border-radius: 100%;
+    border: 2px solid black;
 }
 
-@media (max-width: 768px) 
+.small-size
 {
-    .IZQ_Section, .DER_Section 
-    {
-        width: 100%;
+    width: 100px;
+    height: 100px;
+    flex: 1 1 25%;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .Section_Principal {
+        justify-content: space-between; /* Alinear las secciones izquierda y derecha a los extremos */
     }
-}  */
+
+    .IZQ_Section, .DER_Section {
+        width: 48%; /* Reducir el ancho de las secciones en pantallas más grandes para dejar espacio entre ellas */
+    }
+}
