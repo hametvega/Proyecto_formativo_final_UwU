@@ -82,3 +82,11 @@ h4
 {
     margin: 5px 0;
 }
+
+@media screen and (max-width: 500px) 
+{
+    fieldset 
+    {
+        margin: 20px auto; 
+    }
+}
